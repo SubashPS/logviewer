@@ -49,6 +49,7 @@
   <!--<button class="button" onclick="openLogsProduction()">MiruSports Production</button> -->
   <button class="button" onclick="openLogsUAT()">MiruSports UAT</button>
   <button class="button" onclick="openLogsStaging()">MiruSports Staging</button>
+  <button class="button" onclick="openLogsMSTVL()"MiruSports TVL</button>
   <div id="myDropdownAdmin" class="dropdown-content">
       <a href="https://192.168.71.202:7002/mylogs/">Laravel</a>
       <a href="https://192.168.71.202:7002/mylogs/nginx">Nginx</a>
@@ -61,6 +62,10 @@
       <a href="https://192.168.73.173:8000/mylogs/">Laravel</a>
       <a href="https://192.168.73.173:8000/mylogs/nginx">Nginx</a>
       <a href="https://192.168.73.173:8000/mylogs/MS_API_Log">API log</a>
+  </div>
+  <div id="myDropdownMSTVL" class="dropdown-content">
+      <a href="http://http://117.247.182.44/mylogs/"Laravel</a>
+      <a href="http://http://117.247.182.44/mylogs/nginx"Nginx</a>
   </div>
   <!--<div id="myDropdownProduction" class="dropdown-content">
       <a href="https://192.168.71.203:8000/mylogs/">Payment/application</a>
@@ -96,6 +101,10 @@
      var dropdownContent = document.getElementById("myDropdownStaging");
      dropdownContent.classList.toggle("show");
     }
+    function openLogsMSTVL() {
+     var dropdownContent = document.getElementById("myDropdownMSTVL");
+     dropdownContent.classList.toggle("show");
+    } 
   </script>
 </body>
 </html>
