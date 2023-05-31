@@ -50,6 +50,7 @@
   <button class="button" onclick="openLogsUAT()">MiruSports UAT</button>
   <button class="button" onclick="openLogsStaging()">MiruSports Staging</button>
   <button class="button" onclick="openLogsMSTVL()">MiruSports TVL</button>
+  <button class="button" onclick="openLogsMSNGL()">MiruSports NGL</button>
   <div id="myDropdownAdmin" class="dropdown-content">
       <a href="https://192.168.71.202:7002/mylogs/">Laravel</a>
       <a href="https://192.168.71.202:7002/mylogs/nginx">Nginx</a>
@@ -66,6 +67,10 @@
   <div id="myDropdownMSTVL" class="dropdown-content">
       <a href="http://117.247.182.44/mylogs/">Laravel</a>
       <a href="http://117.247.182.44/mylogs/nginx">Nginx</a>
+  </div>
+  <div id="myDropdownMSNGL" class="dropdown-content">
+      <a href="http://117.221.69.53:9000/mylogs/">Laravel</a>
+      <a href="http://117.221.69.53:9000/mylogs/nginx">Nginx</a>
   </div>
   <!--<div id="myDropdownProduction" class="dropdown-content">
       <a href="https://192.168.71.203:8000/mylogs/">Payment/application</a>
@@ -104,7 +109,11 @@
     function openLogsMSTVL() {
      var dropdownContent = document.getElementById("myDropdownMSTVL");
      dropdownContent.classList.toggle("show");
-    } 
+    }
+    function openLogsMSNGL() {
+     var dropdownContent = document.getElementById("myDropdownMSNGL");
+     dropdownContent.classList.toggle("show");
+    }
   </script>
 </body>
 </html>
